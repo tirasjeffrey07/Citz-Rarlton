@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+
+    <style>
+	    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+      body{
+          font-family: 'Raleway', sans-serif;
+          line-height: 1.4;
+          background-color: #c181e3;
+          width: 500px;
+          margin: auto;
+          color: white;
+      }
+
+      .heading{
+      text-align: center;
+      width: 500px;
+      margin: auto;
+      padding-left: 2rem;
+      }
+
+      form{
+          background-color:#6e1475;
+          padding: 2.5rem 2.5rem; /*padding is the space between the content and the margin*/
+          border-radius: 2rem; /*rounds out the border radius*/
+          width: 500px;
+          margin: auto auto 10vh auto;
+          color: white;
+      }
+
+      .submit-button{
+          background-color: #f7b06e;
+          padding: 0.75rem;
+          width: 100%;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          margin:1.5rem auto;
+          border-color:#f7b06e;
+          color:black;
+          font-family: 'Raleway', sans-serif;
+          font-weight: bold;
+      }
+
+      .input_headings{
+          margin: 0 auto 1.5rem auto;
+          padding: 0.25em;
+      }
+
+      .form-inputs{
+          display: block;
+          width: 90%;
+          height: 2rem;
+          padding: 0.25rem 0.75rem;
+          background-color: white;
+          border: 1px solid #b264ec;
+          border-radius: 0.4rem;
+      }
+
+      .textarea-input{
+          
+          padding: 0.25rem 0.75rem;
+          background-color: white;
+          border: 1px solid #b264ec;
+          border-radius: 0.4rem;
+      }
+    </style>
+    <div class="heading">
+    <h1 style="background-color: #c181e3;" id="title">Survey Form</h1>
+    <p id="description">Help us improve  by taking this short survey :)</p>
+    </div>
+    <form id="survey-form" action="" method="post">
+      <div class="input_headings">
+      <label for="name" id="name-label" >
+        Name:
+      <input class="form-inputs" required id="name" type="text" placeholder="Enter your full name"/></label>
+      <br>      
+      <label for="email" id="email-label">
+        Email:
+      <input class="form-inputs" required id="email" placeholder="janedoe123@xyz.com" type="email"/></label>
+      <br>
+      <label for="number" id="number-label">
+        Age:
+      <input class="form-inputs" required id="number" type="number" min="18" max="99" placeholder="18-99"/>
+      <br>
+      <br>
+      <label for="dropdown">
+        What was your payment method?
+      <select class="form-inputs" required id="dropdown">
+        <option value="">Choose an option</option>
+        <option value="1">Cash</option>
+        <option value="2">Card</option>
+        <option value="3">Cheque</option>
+      </select>
+      <br>
+      
+      </label>
+      <p>Would you recommend The Citz-Rarlton to a friend?</p>
+      <label for="yes">
+        <input class="inline" type="radio" id="yes" name="wyr?" value="yes"/>
+        Yes
+      </label>
+      <br>
+      <label for="no">
+        <input class="inline" type="radio" id="no" name="wyr?" value="yes"/>
+        No
+      </label>
+      <br>
+      <label for="maybe">
+        <input class="inline" type="radio" id="maybe" name="wyr?" value="maybe"/>
+        Maybe
+      </label>
+      <br>
+        <p>Were you alone or in a group?</p>
+        <label for="alone">
+          <input id="alone" type="checkbox" value="alone"/>
+          Alone
+        </label>
+        <br>
+        <label for="group">
+          <input id="group" type="checkbox" value="group"/>
+          Group
+        </label>
+        
+        <br>
+
+        <p>Was your room comfortable and clean?</p>
+        <label for="yes-clean">
+          <input  type="checkbox" id="yes-clean" value="yes-clean"/>
+          Yes
+        </label>
+        <br>
+        <label for="no-clean">
+          <input type="checkbox"id="no-clean" value="no-clean"/>
+          No
+        </label>
+        <br>
+        <label for="sw-clean">
+          <input  type="checkbox" id="sw-clean" value="sw-clean"/>
+          Somewhat
+        </label>
+        <br>
+      
+
+        <p>Did you eat at the hotel?</p>
+        <label for="yes-eat">
+          <input  type="checkbox" id="yes-eat" value="yes-eat"/>
+          Yes
+        </label>
+        <br>
+        <label for="no-eat">
+          <input type="checkbox"id="no-eat" value="no-eat"/>
+          No
+        </label>
+        <br>
+        <label for="st-eat">
+          <input  type="checkbox" id="st-eat" value="st-eat"/>
+          Sometimes
+        </label>
+        <br>
+        
+        <p>Were the staff friendly and helpful?</p>
+        <label for="yes-help">
+          <input  type="checkbox" id="yes-help" value="yes-help"/>
+          Yes
+        </label>
+        <br>
+        <label for="no-help">
+          <input type="checkbox"id="no-help" value="no-help"/>
+          No
+        </label>
+        <br>
+        <label for="st-help">
+          <input  type="checkbox" id="st-help" value="st-help"/>
+          Sometimes
+        </label>
+        <br>
+        <label for="sw-help">
+          <input  type="checkbox" id="sw-help" value="sw-help"/>
+          Somewhat
+        </label>
+        <br>
+        <br>
+
+        
+
+
+        <label for="addcomm">
+        Additional comments and suggestions
+        <br>
+        <textarea class="textarea-input" id="addcomm" rows="5" cols="40"></textarea>
+        </label>
+        <br>
+        <input type="submit" class="submit-button" id="submit" value="Done"/>
+      </div>
+    </form>
+  </body>
+
+  </html>
